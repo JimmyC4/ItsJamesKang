@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.typekit.net/hda3hxb.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Saira:wght@100;200;300;400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/styles.css">
+    <title>James Kang | Design Portfolio</title>
+    <script src="https://kit.fontawesome.com/63de8a54c2.js" crossorigin="anonymous"></script>
+</head>
+<body onscroll="disableScrolling()" 
+onmousewheel="enableScrolling()" 
+ onclick="enableScrolling()"
+  onmousemove="enableScrolling()">
+  <div class="scrollWrapper1">
+    <div class="scrollWrapper2">
+
+<nav class="nav-transition-change">
+    <a href="#">
+    <div id="anim" class="bodymovinanim anim"></div>
+    <!-- <img src="images/JK.svg" class="logo"/> -->
+    </a>
+    <ul>
+        <li><a href="#projects" class="nav-item un">PROJECTS</a></li>
+        <li><a href="#about" class="nav-item un">ABOUT</a></li>
+        <li><a href="#getintouch" class="nav-item un">GET IN TOUCH</a></li>
+    </ul>
+</nav>
+
+<section class="s1 container_smooth">
+    <div class="hero-image fade-in-image">
+        <img id="heart" src="images/heart.png" alt="beating heart surrounded by text">
+    </div>
+    <div class="hero-menu">
+        <div>
+            <div class="black-box"></div>
+            <h3 class="fade-in-text">BRINGING YOUR WEBSITES TO LIFE.</h3>
+            <ul class="hero-text">
+            <li class="animated-text"><span>CREATIVE</span></li>
+            <li class="animated-text"><span>FRONT-END</span></li>
+            <li class="animated-text"><span>DEVELOPER</span></li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<div class="sectiongap"></div>
+<div class="hero_line"></div>
+<div id="about"></div>
+
+
+<script>
+document.addEventListener(
+  "click",
+  function (event) {
+    // Only fire if the target has id copy
+    if (!event.target.matches("#copy")) return;
+
+    if (!navigator.clipboard) {
+      // Clipboard API not available
+      return;
+    }
+    const text = event.target.name;
+    console.log(event.target.name)
+    try {
+      navigator.clipboard.writeText(text);
+      document.getElementById("copy-status").innerText = "Copied to clipboard";
+      setTimeout(function () {
+        document.getElementById("copy-status").innerText = "Click to copy";
+      }, 1200);
+    } catch (err) {
+      console.error("Failed to copy!", err);
+    }
+  },
+  false
+);
+
+</script>
+<section class="s2">
+    <div class="container1">
+        <div class="image">
+            <img src="/images/1.jpg" alt="Profile Picture">  
+        </div>
+        
+        <div class="text-box">
+            <!-- <h2 class="animated-text">
+                Hello! I am
+            </h2> -->
+            
+            <ul class="h2">
+                <li class="animated-text">
+                    <span class="h2">HELLO! I AM</span>
+                </li>
+            </ul>
+            <ul class="h1">
+                <li class="animated-text">
+                    <span>JAMES KANG</span>
+                </li>
+            </ul>
+            <div class="reveal">
+            <p>I am a creative front-end developer from Perth, Western Australia. <br/>I build funky animated websites using HTML, CSS and JavaScript! <br/><br/>Cool tip: Hover my logo!</p>
+            </div>
+        </div>
+
+        </div>  
+</section>
+
+<!-- <section class="s3">
+    <ul>
+        <li class="animated-text">
+            <span>Animated Icon</span>
+        </li>
+    </ul>
+</section> -->
+
+
+<section class="s4">
+    <div class="big-text">
+        <h1 id="projects">PROJECTS</h1>
+    </div>
+
+    <div class="grid-container reveal">
+        <div class="item1 hover-me"><a href="fernfinder.html"><img src="images/fern.png"/></a></div>
+        <div class="item2"><a href="portside.html"><img src="images/portside.png"/></a><p>02/PORTSIDE</p></div>
+        <div class="item3"><a href="creec.html"><img src="images/creec.png"/></a></div>
+        <div class="item4"><a href="ivymae.html"><img src="images/ivy.png"/></a></div>
+        
+    </div>
+
+</section>
+<br><br><br><br>
+
+<footer>
+    <div class="sub-text-container" id="getintouch">
+        <h3 class="sub-text-1 reveal">WANT TO WORK TOGETHER?</h3>
+        
+        <h3 class="sub-text-2 reveal">CAPTURE YOUR CLIENTS HEARTS ❤️</h3>
+    </div>
+    <a class="email reveal" onclick="showToast('Copied to clipboard!')">
+        <textarea readonly disabled type="text" id="copy" name="JAMESKANG99@OUTLOOK.COM" class="email reveal" style="width:100%;height:100%;overflow:hidden;">JAMESKANG99@OUTLOOK.COM</textarea>
+    </a>
+    <div id="toast"></div>
+
+    <br><br><br><br>
+    <div class="icons-container">
+        <a href="https://dribbble.com/JamesKang9" target=”_blank”><img src="images/Dribbble.png" class="footer-icon a"/></a>
+        <a href="https://www.instagram.com/jimmy9c/" target=”_blank”><img src="images/Instagram.png" class="footer-icon b"/></a>
+        <a href="https://www.linkedin.com/in/james-kang-8ab477249/" target=”_blank”><img src="images/LinkedIn.png" class="footer-icon c"/></a>
+        <a href="" onclick="copyToClipboard()"><img src="images/Email.png" class="footer-icon d"/></a>
+    </div>
+    <!-- <a href="#"><img src="images/JK.svg" class="logo2 reveal_low"/></a> -->
+    <div class="footer-holder">
+        <a href="#">
+            <div id="anim2" class="bodymovinanim2 anim"></div>
+        </a>
+    </div>
+
+    <br>
+</footer>
+    <script src="lottie.js"></script>
+    <script src="main.js"></script>
+</div>
+</div>
+</body>
+</html>
