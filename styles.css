@@ -11,7 +11,7 @@
 }
 ::-moz-selection { /* Code for Firefox */
     color: rgb(255, 255, 255);
-    background: #db2f2f;
+    background: #e62041;
   }
   
   ::selection {
@@ -47,15 +47,23 @@ p, h1, h2, h3, h4, h5, h6 {
 /* HOUSEKEEPING */
 body{
     overflow-x: hidden;
-    background: var(--off-black);
+    background:rgb(223, 223, 223);
     /* background: rgb(12, 12, 12); */
-    color: white;
+    color: rgb(22, 22, 22);
     font-family: "Roc Grotesk", sans-serif;
     font-family: Violet-Sans; 
     text-decoration: none;
     /* -webkit-font-smoothing: antialiased; */
     line-height: 1.5;
 }
+p, h2{
+    font-family: 'Inter', sans-serif;
+    color: rgb(31, 31, 31);
+}
+.animated-text{
+    color: var(--off-black);
+}
+
 
 /* .scrollWrapper1 {
     width: 100vw;
@@ -77,10 +85,11 @@ body{
 } */
 
 nav{
+    opacity: .7;
     /* font-family: 'Saira', sans-serif; */
     mix-blend-mode: difference;
     line-height: .2rem;
-    z-index: 2;
+    z-index: 99;
     position: fixed;
     height: 8px;
     width: 100vw;
@@ -118,11 +127,6 @@ nav{
 }
 .goals-text{
     margin-top: -5%;
-}
-.ff_heroheader h2{
-    font-weight: 100;
-    letter-spacing: .1em;
-    color: rgb(32, 32, 32);
 }
 nav ul{
     float: right;
@@ -170,15 +174,24 @@ nav ul li a:hover {
     background-size: 100% 1px;
   }
   .document-section{
-    opacity: .3;
     text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     width: 100%;
     margin: auto;
     padding-top: 200px;
     height: auto;
+}
+.document-section p{
+    opacity: 0.3;
+}
+.document-section a{
+    opacity: .3;
+}
+.document-section a:hover{
+    opacity: 1.0;
 }
 
 .document-info p{
@@ -213,7 +226,6 @@ nav ul li a:hover {
 .s2 ul.h2 span{
     margin-bottom: -3%;
     /* font-family: 'Saira', sans-serif; */
-    color:rgb(219, 219, 219);
     font-weight: 100;
     font-size: 2rem;
 }
@@ -235,6 +247,8 @@ nav #anim, nav #anim3{
     transform: scale(1.1);
 }
 #anim2{
+    opacity: .7;
+    mix-blend-mode: difference;
     color: white;
     filter: brightness(0) invert(1);
     width: 15rem;
@@ -327,7 +341,6 @@ span.h1{
     letter-spacing: .1em;
 }
 .text-box p{
-    margin-top: 1.6%;
     min-width:100px;
     max-width:400px;
     text-align:left;
@@ -365,26 +378,31 @@ span.h1{
     position: absolute;
     z-index: -1;
     top: 15%;
-    left: 59%;
+    left: 65%;
+    width: 40%;
 }
-.noise::before{
+/* .noise::before{
     position: fixed;
     top: 0;
     left: 0;
     width: 100vw;
     height: 100vh;
     content: "";
-    opacity: .05;
+    opacity: .05;   
     z-index: -10;
     pointer-events: none;
     background: url(images/noise.jpeg);
-}
+} */
 
 .hero-image img{
     min-width: 200px;
-    width: 53%;
+    width: 55%;
 }
 #heart{
+    transition: .1s ease-in-out;
+    filter: drop-shadow(
+    1px 2px 4px rgba(92, 22, 22, 0.389));
+  
     animation: 1.5s ease 0s infinite beat;
     filter:
       drop-shadow(
@@ -412,8 +430,8 @@ span.h1{
     height: 100vh;
     justify-content: center;
     align-items: center;
-    margin-right: 14%;
-    margin-top: 2%;
+    margin-right: 20%;
+    margin-top: 3%;
 }
 .hero-menu h3{
     /* font-family: 'Saira', sans-serif; */
@@ -421,7 +439,7 @@ span.h1{
     font-weight: 400;
     font-size: 1.3em;
     line-height: 95%;
-    color: rgb(116, 116, 116);
+    color: rgb(30, 30, 30);
     margin-bottom: 3%;
 }
 .hero-text{
@@ -511,8 +529,6 @@ span.h1{
     transform: translate3d(0, 0%, 0) rotateX(0deg);
 }
 .menu-item-text2{
-    border: solid red 2px;
-    color:red;
     font-weight: 100;
     font-size: 4rem;
 }
@@ -521,15 +537,16 @@ span.h1{
 
 .s2 p, h1{
     font-weight: 400;
-    color: white;
+    color: var(--off-black);
 }
 .s2{
     padding-top: 340px;
 }
 
 .text-box{
+    top: 50px;
     position: relative;
-    margin-left: 2%;
+    margin-left: 1.5%;
     margin-right: -5%;
 }
 
@@ -537,9 +554,7 @@ section.s2 img{
     transition: all .6s cubic-bezier(0.075, 0.82, 0.165, 1);
     position: relative;
     margin-right: 2%;
-    margin-top: 3%;
     max-width: 22em;
-    display: block;
     max-height: 40%;
     height: auto;
 }
@@ -604,8 +619,15 @@ ul li span.active{
 }
 .youtube-video iframe
 {
-    width: 100%;
+    width: 80%;
     height: 100vh;
+}
+.youtube-video{
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
 }
 
 
@@ -627,7 +649,11 @@ ul li span.active{
 }
 .space{
     width: 100%;
-    height:300px;
+    height:100px;
+}
+.github img{
+    mix-blend-mode: difference;
+    width: 40px;
 }
 
 .item1 {
@@ -646,7 +672,7 @@ ul li span.active{
 .item1 img{
     position: relative;
     top: -0%;
-    left: -5%;
+    left: -4%;
     bottom: 7%;
     width: 25em;
     height: auto;
@@ -711,16 +737,13 @@ ul li span.active{
     width: 22.5rem;
     height: auto;
 }
-
 footer h3{
-    color:white;
     font-size: 2rem;
 }
 
 footer a.email{
     font-family: "Roc Grotesk", sans-serif;
     cursor: pointer;
-    color: white;
     text-decoration: none;
     font-weight: 700;
     display: block;
@@ -736,8 +759,8 @@ a.email{
 }
 
 textarea{
+    color: var(--off-black);
     cursor: pointer;
-    color: white;
     border: none;
     background: rgba(0, 0, 0, 0);
     font-size: clamp(6rem, 4vw, 6rem); 
@@ -756,6 +779,8 @@ footer a:hover{
     width: 100vw;
 }
 .footer-icon{
+    opacity: .7;
+    mix-blend-mode: difference;
     width:20px;
     display: inline-flex;
     margin-left: 1.5%;
@@ -1055,37 +1080,41 @@ section.project2-s1{
 
   /* PROJECT | fernfinder. */
   .transition{
+    z-index: 10;
     position: absolute;
     /* mix-blend-mode: overlay; */
     background: var(--off-black);
+    background:rgb(223, 223, 223);
     /* background: white; */
     width: 200vw;
     height: 800vh;
-    animation: transitionOverlay 1s forwards; 
+    animation: transitionOverlay 1.5s forwards; 
   }
 @keyframes transitionOverlay {
     0% { transform: rotate(10deg) translateX(-100vw);}
     100% { transform: translateX(100vw)}
 }
   .ff_heroheader h1{
+    font-family: Violet-Sans; 
     padding-top: 250px;
     margin-left: 180px;
-    font-size: 5rem;
-    font-weight: 500;
-    margin-bottom: -30px;
+    font-size: 4rem;
+    font-weight: 100;
+    line-height: .8;
   }
   .ff_heroheader h2{
+    line-height: 1;
+    font-family: Violet-Sans; 
     margin-left: 180px;
-    font-size: 3em;
+    font-size: 2em;
     font-weight: 100;
-    margin-bottom: -80px;
     letter-spacing: .02em;
+    color: var(--off-grey);
   }
   .wrapper{
-    margin-top: 20px;
+    margin-top: -50px;
     height: 810px;
     display: flex;
-    overflow-x: auto;
     overflow-y: hidden;
     margin-left: 180px;
   }
@@ -1096,7 +1125,7 @@ section.project2-s1{
     transition: all .1s ease-in-out;
     min-width: 80vw;
     height: 810px;
-    line-height: 110px;
+    /* line-height: 110px; */
     text-align: center;
     /* background-color: #ddd; */
     margin-right: 80px;
@@ -1117,7 +1146,6 @@ section.project2-s1{
     height: 810px;
     line-height: 110px;
     text-align: center;
-    /* background-color: #ddd; */
     margin-right: 105px;
 
     display: flex;
@@ -1203,28 +1231,9 @@ section.project2-s1{
     width: 5%;
     top: 10px;
   }
-  hr.six{
-    width: 30%;
-  }
   hr.seven{
     top: -22%;
-    width: 15%;
-  }
-  hr.line-two{
-    margin: auto;
-    width: 8%;
-    opacity: .2;
-    position: relative;
-    top: -200px;
-    rotate: 90deg;
-  }
-   hr.line-one{
-    margin: auto;
-    width: 25%;
-    opacity: .2;
-    position: relative;
-    margin-top: 17%;
-    rotate: 90deg;
+    width: 5%;
   }
   hr.line-two{
     margin: auto;
@@ -1235,11 +1244,14 @@ section.project2-s1{
     rotate: 90deg;
   }
   hr.line-three{
+    top: 150px;
+  }
+   hr.line-one{
     margin: auto;
-    width: 16%;
+    width: 5%;
     opacity: .2;
     position: relative;
-    top: 150px;
+    margin-top: 17%;
     rotate: 90deg;
   }
   .persona1{
@@ -1276,13 +1288,6 @@ section.project2-s1{
     justify-content: center;
     flex-direction: column;
   }
-  .ff_holder2{
-    text-align: left;
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-  }
   .ff_prototype{
     text-align: left;
     background: salmon;
@@ -1295,14 +1300,6 @@ section.project2-s1{
     width: 80vw;
     height: 80vh;
   }
-  .ff_six{
-    margin-top: -60px;
-    height: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
   .ff_lower_images{
     display: flex;
   }
@@ -1312,25 +1309,7 @@ section.project2-s1{
   .ff_final img{
     width: 104%;
   }
-  .ff_image2 img, .ff_image3 img{
-    width: 104%;
-  }
-  .ff_image2{
-    margin: 20px;
-    margin-top: 40px;
-    text-align: left;
-    background: rgb(109, 28, 19);
-    width: 38.7vw;
-    height: 40vh;
-  }
-  .ff_image3{
-    margin: 20px;
-    margin-top: 40px;
-    text-align: left;
-    background: rgb(163, 68, 20);
-    width: 38.7vw;
-    height: 40vh;
-  }
+  
   .image_container{
     display: flex;
   justify-content: center;
@@ -1470,8 +1449,9 @@ span.smaller-text {
   
   .accordion label:hover,
   .accordion label:focus {
+    opacity: .9;
     background-image: linear-gradient(#e3ced1, #e8c3c3);
-    background-image: linear-gradient(45deg,#c43131,#D62121 100%);
+    background-image: linear-gradient(45deg,#e62041,#eb2e4d 100%);
   }
   
   
@@ -1482,8 +1462,9 @@ span.smaller-text {
   }
   .accordion > input[type="checkbox"]:checked ~ .handle label:hover,
   .accordion > input[type="checkbox"]:checked ~ .handle label:focus {
-    background-image: linear-gradient(45deg,#c43131,#D62121 100%);
-    color: #292929;
+    opacity: .9;
+    background-image: linear-gradient(#e3ced1, #e8c3c3);
+    background-image: linear-gradient(45deg,#e62041,#eb2e4d 100%);
   }
 
 @media screen and (max-width: 1200px){
@@ -1500,7 +1481,6 @@ span.smaller-text {
 
 @media screen and (max-width: 1010px){
     .text-box{
-        margin-top: 15%;
         position: relative;
         right: 185px;
         margin-right: 5%;
@@ -1509,7 +1489,7 @@ span.smaller-text {
     section.s2 img{
         position: relative;
         margin-left: 50%;
-        margin-top: 240%;
+        top: -280px;
         max-width: 22em;
         display: block;
         max-height: 40%;
@@ -1517,6 +1497,7 @@ span.smaller-text {
     }
     
     .container1{
+        padding-top: 33%;
         overflow: visible;
         display: flex;
         align-items: center;
@@ -1559,10 +1540,10 @@ span.smaller-text {
     .hero-text{
         font-style: normal;
         font-weight: 700;
-        font-size: 80px;
+        font-size: 50px;
         line-height: 95%;
-        margin-left: 10%;
         width: 100%;
+        margin-left: 10%;
     }
     .hero-menu h3{
         text-transform: uppercase;

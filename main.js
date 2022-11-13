@@ -7,7 +7,7 @@ console.log("JavaScript is working!")
 var scroll1 = window.pageYOffset;
 document.querySelector('nav').style.top = "-110px"; //hide nav on start
 
-var delayInMilliseconds = 1400; //1 second
+var delayInMilliseconds = 100; //1 second
 
 setTimeout(function() {
     document.querySelector('nav').style.top = "0"; //hide nav on start
@@ -106,7 +106,7 @@ function smoothScroll(){
     current = lerp(current, target, ease)
     current = parseFloat(current.toFixed(2));
     target = window.scrollY
-    skewDiff = (target - current) * .03
+    skewDiff = (target - current) * .02
 
     setTransform(container, `translateY(${-current}px) skewY(${skewDiff}deg)`);
     // updateImages()
