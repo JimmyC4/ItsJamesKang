@@ -9,6 +9,42 @@
     margin:0;
     padding:0;
 }
+/* .margin{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 8%;
+    height: 100vh;
+    background: blue;
+    opacity: .5;
+}
+.margin2{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 8%;
+    height: 100vh;
+    background: blue;
+    opacity: .5;
+}
+.margin3{
+    position: fixed;
+    width: 27px;
+    height: 9749px;
+    left: 47.5%;
+    top: 0;
+    background: blue;
+    opacity: .5;
+}
+.margin4{
+    position: fixed;
+width: 27px;
+height: 9749px;
+right: 47.5%;
+top: 0;
+
+background: rgba(0, 56, 255, 0.5);
+} */
 ::-moz-selection { /* Code for Firefox */
     color: rgb(255, 255, 255);
     background: #e62041;
@@ -85,6 +121,7 @@ p, h2{
 } */
 
 nav{
+    margin-top: 1%;
     opacity: .7;
     /* font-family: 'Saira', sans-serif; */
     mix-blend-mode: difference;
@@ -130,7 +167,7 @@ nav{
 }
 nav ul{
     float: right;
-    margin-right: 5%;
+    margin-right: 7%;
     margin-top: 1.5%;
 }
 
@@ -224,23 +261,33 @@ nav ul li a:hover {
 }
 
 .s2 ul.h2 span{
-    margin-bottom: -3%;
-    /* font-family: 'Saira', sans-serif; */
+    color: rgba(5, 5, 5, 0.5);
+    font-family: 'Inter';
     font-weight: 100;
     font-size: 2rem;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 50px;
 }
 
 .s2 ul.h1 span{
+    position: relative;
     font-weight: 800;
     font-size: 2.9rem;
+    font-family: 'Roc Grotesk';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 80px;
+
+    color: #050505;
 }
 
 nav #anim, nav #anim3{
     position: fixed;
     filter: brightness(0) invert(1);
     width: 15rem;
-    margin-top: -1%;
-    margin-left: -1%;
+    margin-top: -2.2%;
+    margin-left: 1.8%;
 }
 
 #anim:hover, #anim3:hover{
@@ -310,7 +357,8 @@ section{
 
 section.s2{
     width: 100vw;
-    height: 130vh;
+    height: auto;
+    padding: 30% 0 30% 0;
 }
 section.s4{
     width: 100vw;
@@ -331,25 +379,32 @@ span.h1{
 }
 
 .text-box h2{
-    line-height: 1.5rem;
     color:rgb(255, 255, 255);
     opacity: .5;
     font-weight: 250;
     font-size: 2.3rem;
 }
 .h2 {
-    letter-spacing: .1em;
+    letter-spacing: -.1em;
+    margin-bottom: -1%;
+    position: absolute;
+    top: -40px;
 }
 .text-box p{
     min-width:100px;
-    max-width:400px;
+    max-width:520px;
     text-align:left;
-    color:rgb(123, 123, 123);
-    font-weight: 100;
-    opacity: .8;
-    line-height: 1.25;
-    font-size: 1.20rem;
-    letter-spacing: .02em;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: justify;
+
+    color: #050505;
+    opacity: .9;
+    position: relative;
+
 }
 /* p:after {
     content:'';
@@ -377,8 +432,8 @@ span.h1{
     /* filter: contrast(110%) brightness(100%); */
     position: absolute;
     z-index: -1;
-    top: 15%;
-    left: 65%;
+    top: 13%;
+    left: 69%;
     width: 40%;
 }
 /* .noise::before{
@@ -396,7 +451,7 @@ span.h1{
 
 .hero-image img{
     min-width: 200px;
-    width: 55%;
+    width: 60%;
 }
 #heart{
     transition: .1s ease-in-out;
@@ -430,7 +485,7 @@ span.h1{
     height: 100vh;
     justify-content: center;
     align-items: center;
-    margin-right: 20%;
+    margin-right: 22.4%;
     margin-top: 3%;
 }
 .hero-menu h3{
@@ -441,12 +496,13 @@ span.h1{
     line-height: 95%;
     color: rgb(30, 30, 30);
     margin-bottom: 3%;
+    margin-left: .5%;
 }
 .hero-text{
     font-family: "Roc Grotesk", sans-serif;
     font-style: normal;
     font-weight: 600;
-    font-size: 135px;
+    font-size: 160px;
     line-height: 85%;
 }
 /* .black-box{
@@ -534,29 +590,19 @@ span.h1{
 }
 /*TWISTING TEXT*/
 
-
-.s2 p, h1{
-    font-weight: 400;
-    color: var(--off-black);
-}
-.s2{
-    padding-top: 340px;
-}
-
 .text-box{
-    top: 50px;
     position: relative;
-    margin-left: 1.5%;
-    margin-right: -5%;
+    margin-left: .9%;
+    margin-right: -10%;
 }
 
 section.s2 img{
     transition: all .6s cubic-bezier(0.075, 0.82, 0.165, 1);
     position: relative;
-    margin-right: 2%;
-    max-width: 22em;
+    max-width: 18em;
     max-height: 40%;
     height: auto;
+    top: -7px;
 }
 
 .container1{
@@ -565,6 +611,13 @@ section.s2 img{
     align-items: center;
     justify-content: center;
 }
+hr.line {
+    border: 0;
+    height: 1px;
+    background-color: black;
+    position: relative;
+    top: -2px;
+  }
 /* Animated Text */
 
 :root{
@@ -619,7 +672,7 @@ ul li span.active{
 }
 .youtube-video iframe
 {
-    width: 80%;
+    width: 84%;
     height: 100vh;
 }
 .youtube-video{
@@ -628,6 +681,66 @@ ul li span.active{
     align-items: center;
     justify-content: center;
     width: 100%;
+}
+.youtube-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 84%;
+    margin: auto;
+    position: relative;
+    top: 100px;
+}
+.youtube-info a {
+    text-decoration: none;
+}
+.padding-top{
+    padding-top: 185px;
+}
+.two-projects{
+    gap: 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction: row;
+}
+.two-projects img{
+    background: grey;
+    width: 41.4vw;
+    height: 38vh;
+}
+.project-text{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 4px;
+    margin-bottom: 20px;
+}
+.project-text p{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 18px;
+
+    color: rgba(5, 5, 5, 0.5);
+}
+.project-name p{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 24px;
+
+    color: #000000;
+}
+hr {
+        border: 0;
+        height: 1px;
+        background-color: black;
+        position: relative;
+        top: -2px;
 }
 
 
@@ -755,7 +868,9 @@ footer a.email{
 }
 
 a.email{
-    height:50vh
+    height:50vh;
+    width: 85%;
+    left: .5%;
 }
 
 textarea{
@@ -763,7 +878,7 @@ textarea{
     cursor: pointer;
     border: none;
     background: rgba(0, 0, 0, 0);
-    font-size: clamp(6rem, 4vw, 6rem); 
+    font-size: clamp(5.7585rem, 4vw, 6rem); 
     resize: none;    
     /* border: solid red 3px; */
 }
@@ -776,14 +891,19 @@ footer a:hover{
 }
 
 .icons-container{
-    width: 100vw;
+    margin: auto;
+    width: 94.4%;
+}
+.footer-icon.d{
+    position: relative;
+    right: -4.3px;
 }
 .footer-icon{
     opacity: .7;
     mix-blend-mode: difference;
     width:20px;
     display: inline-flex;
-    margin-left: 1.5%;
+    margin-left: 1%;
 }
 .footer-icon:hover{
     transform: scale(1.1);
@@ -798,22 +918,44 @@ footer a:hover{
 }
 
 .sub-text-1{
-    letter-spacing: .2rem;
+    font-family: 'Inter';
+    font-style: normal;
     font-weight: 400;
-    font-size: 1.1em;
-    text-align: left;
-    margin-left: 6%;
-    max-width: 100%;
+    font-size: 20px;
+    line-height: 36px;
+
+    color: rgba(0, 0, 0, 0.5);
 }
 .sub-text-2{
-    letter-spacing: .2rem;
-    font-size: 1.1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex-direction: row;
+    font-family: 'Inter';
+    font-style: normal;
     font-weight: 400;
+    font-size: 20px;
+    line-height: 36px;
     text-align: right;
-    margin-right: 5%;
+
+    color: rgba(0, 0, 0, 0.5);
+}
+.heart-icon{
+    background: url(images/heart-icon.png);
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-size: 20px;
+}
+.heart-icon-cont{
+    position: relative;
+    width: 10px;
 }
 
 .sub-text-container{
+    width: 84%;
+    margin:auto;
     margin-bottom: 5%;
     display: flex;
     align-items: flex-end;
@@ -1220,40 +1362,6 @@ section.project2-s1{
     width: 70%;
     height: auto;
   }
-  hr{
-    margin: auto;
-    width: 5%;
-    opacity: .2;
-    position: relative;
-    rotate: 90deg;
-  }
-  hr.five{
-    width: 5%;
-    top: 10px;
-  }
-  hr.seven{
-    top: -22%;
-    width: 5%;
-  }
-  hr.line-two{
-    margin: auto;
-    width: 8%;
-    opacity: .2;
-    position: relative;
-    top: -200px;
-    rotate: 90deg;
-  }
-  hr.line-three{
-    top: 150px;
-  }
-   hr.line-one{
-    margin: auto;
-    width: 5%;
-    opacity: .2;
-    position: relative;
-    margin-top: 17%;
-    rotate: 90deg;
-  }
   .persona1{
     position: relative;
     transition: all .5s ease-in-out;
@@ -1350,11 +1458,11 @@ section.project2-s1{
     font-size: 60px;
     font-weight:600;
 }
-.text-holder hr{
+/* .text-holder hr{
     border: 1px solid white;
     margin-top: -10px;
     width: 100%;
-}
+} */
 .bold{
     font-family: "Roc Grotesk", sans-serif;
     font-size: 1.1em;
@@ -1559,6 +1667,7 @@ span.smaller-text {
     /* TOOLTIP */
     html, body {
         height: 100%;
+        width: 100vw;
         margin: 0;
         padding: 0;
         /* overflow: hidden; */
