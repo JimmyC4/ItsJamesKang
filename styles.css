@@ -1109,28 +1109,42 @@ section.project2-s1{
     background: url(images/portside-image.png);
     top:-20px;
     left: 0;
-    width: 84vw;
+    width: 100vw;
     margin: auto;
     height: 90vh;
   }
   .proj-summary{
     padding-top: 10%;
-    border: solid red 3px;
     width: 84%;
     margin: auto;
   }
+  .proj-images{
+    padding-top: 5%;
+    display: flex;
+    align-items: baseline;
+    justify-content:space-between;
+  }
   .proj-image-1{
-    background: url();
-    position: relative;
     background: grey;
-    width: 41.4vw;
-    height: 38vh;
+    background: url(images/walls.png);
+    position: relative;
+    width: 41.2vw;
+    height: 45vh;
+    background-size: cover;
+  }
+  .proj-image-2{
+    background: grey;
+    background: url(images/aboutus.png);
+    position: relative;
+    background-size: cover;
+    width: 41.2vw;
+    height: 45vh;
   }
   .proj-summary h1{
     font-family: 'Roc Grotesk';
     font-style: normal;
     font-weight: 700;
-    font-size: 65px;
+    font-size: 3.6rem;
     line-height: 76%;
     color: #050505;
   }
@@ -1143,7 +1157,7 @@ section.project2-s1{
     font-family: 'Inter';
     font-style: normal;
     font-weight: 300;
-    font-size: 25px;
+    font-size: 1.3rem;
     line-height: 76%;
     color: #050505;
   }
@@ -1151,11 +1165,37 @@ section.project2-s1{
     font-family: 'Inter';
     font-style: normal;
     font-weight: 300;
-    font-size: 25px;
+    font-size: 1.3rem;
     line-height: 76%;
     text-align: right;
     color: #797979;
   }
+  .screens{
+    width: 84%;
+    margin: auto;
+    text-align: right;
+  }
+  .screens-line{
+    text-align: left;
+  }
+  h1.project-goals {
+    margin-top: 10%;
+  }
+  .summary{
+    border: solid red 3px;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    width: 84%;
+    margin: auto;
+  }
+  .summary-text{
+    width: 41.2vw;
+  }
+
+
+
+
 .highlight span{
     font-size: 28px;
     color: white;
