@@ -9,7 +9,8 @@
     margin:0;
     padding:0;
 }
-/* .margin{
+.margin{
+    z-index: 99;
     position: fixed;
     top: 0;
     left: 0;
@@ -19,6 +20,7 @@
     opacity: .5;
 }
 .margin2{
+    z-index: 99;
     position: fixed;
     top: 0;
     right: 0;
@@ -28,6 +30,7 @@
     opacity: .5;
 }
 .margin3{
+    z-index: 99;
     position: fixed;
     width: 27px;
     height: 9749px;
@@ -37,6 +40,7 @@
     opacity: .5;
 }
 .margin4{
+    z-index: 99;
     position: fixed;
 width: 27px;
 height: 9749px;
@@ -44,7 +48,7 @@ right: 47.5%;
 top: 0;
 
 background: rgba(0, 56, 255, 0.5);
-} */
+}
 ::-moz-selection { /* Code for Firefox */
     color: rgb(255, 255, 255);
     background: #e62041;
@@ -126,7 +130,7 @@ nav{
     /* font-family: 'Saira', sans-serif; */
     mix-blend-mode: difference;
     line-height: .2rem;
-    z-index: 99;
+    z-index: 999;
     position: fixed;
     height: 8px;
     width: 100vw;
@@ -167,7 +171,7 @@ nav{
 }
 nav ul{
     float: right;
-    margin-right: 7%;
+    padding-right: 7%;
     margin-top: 1.5%;
 }
 
@@ -625,7 +629,8 @@ hr.line {
     --var-color-two: rgb(16, 16, 16);
 }
 h1, li{
-    color: var(--var-color-one);
+    /* color: var(--var-color-one); */
+    color:rgb(5, 5, 5);
 }
 
 ul li{
@@ -698,6 +703,7 @@ ul li span.active{
     padding-top: 185px;
 }
 .two-projects{
+
     gap: 20px;
     width: 100%;
     display: flex;
@@ -706,6 +712,7 @@ ul li span.active{
     flex-direction: row;
 }
 .two-projects img{
+    position: relative;
     background: grey;
     width: 41.4vw;
     height: 38vh;
@@ -1094,37 +1101,61 @@ section.project2-s1{
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke: 4px var(--off-grey);
 } */
-.portside_text{
+
+/* PORTSIDE BOULDERS PROJECT TEMPLATE */
+.hero_project{
+    position: relative;
+    background-color: rgb(148, 97, 97);
+    background: url(images/portside-image.png);
+    top:-20px;
+    left: 0;
+    width: 84vw;
+    margin: auto;
+    height: 90vh;
+  }
+  .proj-summary{
+    padding-top: 10%;
+    border: solid red 3px;
+    width: 84%;
+    margin: auto;
+  }
+  .proj-image-1{
+    background: url();
+    position: relative;
+    background: grey;
+    width: 41.4vw;
+    height: 38vh;
+  }
+  .proj-summary h1{
+    font-family: 'Roc Grotesk';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 65px;
+    line-height: 76%;
+    color: #050505;
+  }
+  .project-info{
     display: flex;
-    flex-direction: column;
-    width: 23%; 
-    margin-right: 10%;
-}
-.portside_text h1{
-    text-align: right;
-    font-size: 20px;
-    color: #838383;
-    transition: all .5s ease-in-out;
-    font-family: 'Roc Grotesk';
+    align-items: center;
+    justify-content: space-between;
+  }
+  .project-info h1{
+    font-family: 'Inter';
     font-style: normal;
-    
-}
-.portside_text p{
-    transition: all .5s ease-in-out;
-    margin-bottom: 10%;
-    font-family: 'Roc Grotesk';
-    font-style: normal;
-    font-size: 15px;
-    line-height: normal;
-    color: var(--off-grey);
-    text-align: right;
-}
-.portside_text span{
-    transition: all .5s ease-in-out;
-    color: var(--off-grey);
-    font-size: 15px;
     font-weight: 300;
-}
+    font-size: 25px;
+    line-height: 76%;
+    color: #050505;
+  }
+  .project-info p{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 25px;
+    line-height: 76%;
+    text-align: right;
+    color: #797979;
+  }
 .highlight span{
     font-size: 28px;
     color: white;
@@ -1257,7 +1288,7 @@ section.project2-s1{
     margin-top: -50px;
     height: 810px;
     display: flex;
-    overflow-y: hidden;
+    /* overflow-y: hidden; */
     margin-left: 180px;
   }
   .wrapper::-webkit-scrollbar{
@@ -1670,7 +1701,7 @@ span.smaller-text {
         width: 100vw;
         margin: 0;
         padding: 0;
-        /* overflow: hidden; */
+        /* overflow-y: hidden; */
     }
     
     .container {

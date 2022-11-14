@@ -384,3 +384,29 @@ function initTooltip() {
 initTooltip();
 
 var camera = window.FontAwesome.icon({ prefix: 'fas', iconName: 'camera' })
+
+//CLIPBOARD
+document.addEventListener(
+    "click",
+    function (event) {
+      // Only fire if the target has id copy
+      if (!event.target.matches("#copy")) return;
+  
+      if (!navigator.clipboard) {
+        // Clipboard API not available
+        return;
+      }
+      const text = event.target.name;
+      console.log(event.target.name)
+      try {
+        navigator.clipboard.writeText(text);
+        document.getElementById("copy-status").innerText = "Copied to clipboard";
+        setTimeout(function () {
+          document.getElementById("copy-status").innerText = "Click to copy";
+        }, 1200);
+      } catch (err) {
+        console.error("Failed to copy!", err);
+      }
+    },
+    false
+  );    
