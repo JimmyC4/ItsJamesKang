@@ -315,9 +315,6 @@ nav #anim, nav #anim3{
 #anim4:hover{
     transform: scale(1.1);
 }
-footer{
-  padding-top: 10%;
-}
 .footer-holder{
     /* border: solid red 5px; */
     margin-top: -5%;
@@ -370,7 +367,7 @@ section.s2{
 }
 section.s4{
     width: 100vw;
-    height: 200vh;
+    height: auto;
 }
 
 .p2{
@@ -2020,8 +2017,11 @@ span.smaller-text {
         background-color: rgba(0, 0, 0, 0.5);
       }
 @media screen and (max-width: 900px){
+  footer{
+    padding-top: 30%;
+  }
     a.email{
-        height:72vh;
+        height:22vh;
         overflow:visible;
     }
     nav ul li a{
