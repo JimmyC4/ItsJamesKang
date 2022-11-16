@@ -1220,13 +1220,6 @@ section.project2-s1{
   }
   .summary-text h1, .dot-points-holder h1{
     padding-bottom: 3%;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 15px;
-    line-height: 18px;
-
-    color: rgba(5, 5, 5, 0.5);
   }
   .summary-content{
     width: 100%;
@@ -1306,16 +1299,10 @@ section.project2-s1{
   }
   .colour-pallete-info h1{
     padding-top: 8%;
+    padding-bottom: 2%;
   }
   .colour-pallete-info p{
     padding-top: 2%;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 18px;
-    line-height: 22px;
-    
-    color: rgb(5, 5, 5);
   }
 
   .personas{
@@ -1327,6 +1314,7 @@ section.project2-s1{
   }
   .persona-info{
     padding-top: 30%;
+    padding-bottom: 15%;
     text-align: right;
     width: 49.3%;
   }
