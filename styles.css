@@ -435,6 +435,7 @@ span.h1{
     opacity: 1;
 }
 .hero-image{
+    overflow-x: hidden;
     /* filter: contrast(110%) brightness(100%); */
     position: absolute;
     z-index: -1;
@@ -905,7 +906,9 @@ footer a:hover{
     align-items: flex-end;
     justify-content: space-between;
 }
-
+.s1{
+  overflow-x: hidden;
+}
 section.project1-s1{
     /* border: solid red 3px; */
     height: 160vh;
@@ -1964,7 +1967,6 @@ span.smaller-text {
         width: 100vw;
         margin: 0;
         padding: 0;
-        overflow-x: hidden;
     }
     
     .container {
