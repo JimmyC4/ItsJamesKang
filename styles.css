@@ -836,7 +836,7 @@ footer a:hover{
 }
 .footer-icon.d{
     position: relative;
-    right: -4.3px;
+    right: -.4%;
 }
 .footer-icon{
     opacity: .7;
@@ -1864,7 +1864,7 @@ span.smaller-text {
 
 @media screen and (max-width: 1010px){
     .footer-icon.d{
-        margin-left: 1.5%;
+        margin-left: 0%;
     }
 }
 
