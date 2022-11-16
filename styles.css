@@ -687,7 +687,7 @@ ul li span.active{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
+    width: 100vw;
 }
 .youtube-info{
     color: rgb(5,5, 5);
@@ -1964,7 +1964,7 @@ span.smaller-text {
         width: 100vw;
         margin: 0;
         padding: 0;
-        /* overflow-y: hidden; */
+        overflow-x: hidden;
     }
     
     .container {
@@ -2021,11 +2021,11 @@ span.smaller-text {
     padding-top: 30%;
   }
     a.email{
-        height:22vh;
+        height:75vh;
         overflow:visible;
     }
     nav ul li a{
-      font-size: clamp(1em, 1.5vw, 6.5em);
+      font-size: clamp(1.em, 1.5vw, 6.5em);
   }
 }
 
