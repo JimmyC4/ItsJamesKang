@@ -5,7 +5,7 @@ console.log("JavaScript is working!")
 
 // Navigation Hide
 var scroll1 = window.pageYOffset;
-document.querySelector('nav').style.top = "-110px"; //hide nav on start
+document.querySelector('nav').style.top = "-200px"; //hide nav on start
 
 var delayInMilliseconds = 100; //1 second
 
@@ -19,7 +19,7 @@ window.onscroll = function(){
         document.querySelector('nav').style.top = "0";
     }
     else{
-        document.querySelector('nav').style.top = "-110px";
+        document.querySelector('nav').style.top = "-200px";
     }
     scroll1 = scroll2;
 
