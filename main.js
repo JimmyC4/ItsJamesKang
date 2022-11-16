@@ -127,7 +127,7 @@ function updateImages(){
 setupAnimation();
 
 // text animate in
-let listItems = [...document.querySelectorAll('li.animated-text')];
+let listItems = [...document.querySelectorAll('.animated-text')];
 
 let options = {
     rootMargin: '-10%', //-10% means when the screen hits bottom 10% it will appear

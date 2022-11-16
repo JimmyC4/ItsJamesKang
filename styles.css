@@ -171,14 +171,14 @@ nav{
 }
 nav ul{
     float: right;
-    padding-right: 7%;
+    margin-right: 7%;
     margin-top: 1.5%;
 }
 
 nav ul li{
     list-style: none;
     display: inline-block;
-    margin: 0 15px;
+    margin: 0 15px 0 0;
     line-height: 80px;
 }
 
@@ -331,7 +331,7 @@ nav #anim, nav #anim3{
     /* filter: invert(100%); */
     width: 5rem;
     margin-top: 3%;
-    margin-left: 5%;
+    margin-left: 7.5%;
 }
 
 .logo2{
@@ -672,7 +672,7 @@ ul li span.active{
     font-style: normal;
     font-weight: 600;
     /* font-size: 15.5em; */
-    font-size: clamp(6.5em, 21vw, 18.5em);;
+    font-size: clamp(6.5em, 21vw, 18.5em);
     line-height: 461px;
     color: #181818;
 }
@@ -689,6 +689,7 @@ ul li span.active{
     width: 100%;
 }
 .youtube-info{
+    color: rgb(5,5, 5);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -698,7 +699,9 @@ ul li span.active{
     top: 100px;
 }
 .youtube-info a {
+    color: rgb(5,5, 5);
     text-decoration: none;
+    opacity: .5;
 }
 .padding-top{
     padding-top: 185px;
@@ -1037,6 +1040,7 @@ section.project2-s1{
     position: relative;
     background-color: rgb(148, 97, 97);
     background: url(images/portside-image.png);
+    background-size: cover;
     top:-20px;
     left: 0;
     width: 100vw;
@@ -1075,11 +1079,11 @@ section.project2-s1{
     font-family: 'Roc Grotesk';
     font-style: normal;
     font-weight: 700;
-    font-size: 3.6rem;
+    font-size: clamp(3rem, 3.5vw, 12rem);
     line-height: 76%;
-    color: #050505;
   }
   .project-info{
+    padding-top: 1%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -1088,7 +1092,7 @@ section.project2-s1{
     font-family: 'Inter';
     font-style: normal;
     font-weight: 300;
-    font-size: 1.3rem;
+    font-size: clamp(1.3em, 1.6vw, 7.5em);
     line-height: 76%;
     color: #050505;
   }
@@ -1096,23 +1100,23 @@ section.project2-s1{
     font-family: 'Inter';
     font-style: normal;
     font-weight: 300;
-    font-size: 1.3rem;
+    font-size: clamp(1.3em, 1.6vw, 7.5em);
     line-height: 76%;
     text-align: right;
     color: #797979;
   }
   .screens{
-    width: 84%;
+    width: 100%;
     margin: auto;
-    text-align: right;
   }
-  .screens-info{
+  .screen-info-2{
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin: auto;
   }
-  .screens-info p{
+  .screen-info-2 p{
     font-family: 'Inter';
     font-style: normal;
     font-weight: 300;
@@ -1121,10 +1125,73 @@ section.project2-s1{
     text-align: right;
     color: rgba(5, 5, 5, 0.5);
   }
+  .screen-info-2 h1{
+    margin-top: 2%;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 24px;
+    color: rgb(5, 5, 5);
+  }
+  .main-header{
+    padding-bottom: 1%;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-size: clamp(1.8em, 2vw, 8em);
+    line-height: 76%;
+    color: #050505;
+  }
+  .spacebetween{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .problem-content img{
+    width: 50%;
+    height: 30%;
+    background: grey;
+  }
+  .problemsolving{
+    padding-top: 20%;
+  }
+  .right{
+    text-align: right;
+  }
+  .subtext{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-size: clamp(.9em, .9vw, 7.5em);
+    line-height: 18px;
+    color: rgba(5, 5, 5, 0.5);
+  }
+  .subheading{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-size: clamp(1em, 2.5vw, 5em);
+    line-height: 28px;
+    color: rgb(5, 5, 5);
+  }
+  .bodycopy{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-size: clamp(1em, 1.1vw, 5em);
+    color: rgb(5, 5, 5);
+    line-height: 1.2em;
+  }
+  .small-header{
+    font-size: clamp(1.2em, 1vw, 3em);
+  }
   .screens-line{
     text-align: left;
   }
   h1.project-goals{
+    font-size: clamp(1.8em, 2vw, 8em);
     margin-top: 15%;
   }
   .solution{
@@ -1137,7 +1204,7 @@ section.project2-s1{
     font-family: 'Inter';
     font-style: normal;
     font-weight: 300;
-    font-size: 35px;
+    font-size: clamp(1.8em, 2vw, 8em);
     line-height: 76%;
     text-align: right;
     color: #050505;
@@ -1147,6 +1214,7 @@ section.project2-s1{
     margin: auto;
   }
   .summary-text{
+    margin-top: 35%;
     width: 41.2vw;
     font-size: 1.125rem;
   }
@@ -1193,32 +1261,18 @@ section.project2-s1{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-bottom: 6%;
+    padding-bottom: 8%;
   }
-  .tools-header p{
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 15px;
-    line-height: 18px;
-    color: rgba(5, 5, 5, 0.5);
+  .margin-bottom-3{
+    margin-bottom: 3%;
   }
   .tools-holder img{
     padding-top: 2%;
     padding-bottom: 1%;
     width: 80%;
   }
-  .tools-header h1{
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 20px;
-    line-height: 24px;
-    text-align: right;
-    color: #000000;
-  }
+
   .colour-palette-holder{
-    border: solid yellow 3px;
     height: auto;
     width: 49.5%;
     margin-left: 50.5%;
@@ -1252,14 +1306,6 @@ section.project2-s1{
   }
   .colour-pallete-info h1{
     padding-top: 8%;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 20px;
-    line-height: 24px;
-    
-    color: rgb(5, 5, 5);
-    
   }
   .colour-pallete-info p{
     padding-top: 2%;
@@ -1276,14 +1322,20 @@ section.project2-s1{
     padding-top: 20%;
     text-align: right;
   }
+  .personas h1{
+    font-size: clamp(1.8em, 2vw, 8em);
+  }
   .persona-info{
-    padding-top: 20%;
+    padding-top: 30%;
     text-align: right;
     width: 49.3%;
   }
+  .persona-info h1{
+    padding-bottom: 4%;
+  }
   .persona1{
-    padding-top: 35%;
-    padding-bottom: 35%;
+    margin-top: 35%;
+    margin-bottom: 35%;
   }
   .image_info{
     text-align: right;
@@ -1310,13 +1362,6 @@ section.project2-s1{
   }
   .description p{
     padding-top: 8%;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 18px;
-    line-height: 22px;
-    text-align: right;
-    color: #050505;
     padding-bottom: 2%;
   }
   .bottom_info{
@@ -1354,13 +1399,6 @@ section.project2-s1{
   }
   .description p{
     padding-top: 8%;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 18px;
-    line-height: 22px;
-    text-align: right;
-    color: #050505;
     padding-bottom: 2%;
   }
   .bottom_info{
@@ -1408,7 +1446,8 @@ section.project2-s1{
 }
 #about{
     position: absolute;
-    top:90%;
+    top: 245%;
+    width: 100%;
 }
 
 /* ------------------------ SUSTAINABLE VICTORIA ------------------------ */
