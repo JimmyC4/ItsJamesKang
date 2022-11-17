@@ -271,7 +271,7 @@ nav ul li a:hover {
     font-size: 2rem;
     font-style: normal;
     font-weight: 100;
-    font-size: 50px;
+    font-size: clamp(3em, 5vw, 8em);
 }
 
 .s2 ul.h1 span{
@@ -281,7 +281,6 @@ nav ul li a:hover {
     font-family: 'Roc Grotesk';
     font-style: normal;
     font-weight: 700;
-    font-size: 80px;
 
     color: #050505;
 }
@@ -382,7 +381,9 @@ span.h1{
     font-weight: 500;
     font-size: 3rem;
 }
-
+.text-box{
+  width: 100%;
+}
 .text-box h2{
     color:rgb(255, 255, 255);
     opacity: .5;
@@ -429,7 +430,7 @@ span.h1{
     opacity: 1;
 }
 .hero-image{
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
     /* filter: contrast(110%) brightness(100%); */
     position: absolute;
     z-index: -1;
