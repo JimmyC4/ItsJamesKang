@@ -2013,7 +2013,7 @@ span.smaller-text {
     a.email{
         height:90vh;
         max-height: 32vh;
-        overflow:hidden;
+        overflow:visible;
     }
     nav ul li a{
       font-size: clamp(1.em, 1.5vw, 6.5em);
