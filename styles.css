@@ -389,12 +389,6 @@ span.h1{
     font-weight: 250;
     font-size: 2.3rem;
 }
-.h2 {
-    letter-spacing: -.1em;
-    margin-bottom: -1%;
-    position: absolute;
-    top: -40px;
-}
 .text-box p{
     min-width:100px;
     max-width:520px;
@@ -597,12 +591,6 @@ span.h1{
 }
 /*TWISTING TEXT*/
 
-.text-box{
-    position: relative;
-    margin-left: .9%;
-    margin-right: -10%;
-}
-
 section.s2 img{
     transition: all .6s cubic-bezier(0.075, 0.82, 0.165, 1);
     position: relative;
@@ -613,7 +601,8 @@ section.s2 img{
 }
 
 .container1{
-    overflow: visible;
+    /* overflow: visible; */
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1885,20 +1874,14 @@ span.smaller-text {
 }
 
 @media screen and (max-width: 1010px){
-    .text-box{
-        position: relative;
-        right: 185px;
-        margin-right: 5%;
-    }
     
     section.s2 img{
-        position: relative;
-        margin-left: 50%;
-        top: -280px;
-        max-width: 22em;
-        display: block;
-        max-height: 40%;
-        height: auto;
+      position: relative;
+      max-width: 25em;
+      max-height: 40%;
+      height: auto;
+      top: 0px;
+      padding-bottom: 8%;
     }
     
     .container1{
@@ -1907,6 +1890,7 @@ span.smaller-text {
         display: flex;
         align-items: center;
         justify-content: center;
+        flex-direction: column;
     }
     section .accordion{
         position: relative;
@@ -2019,6 +2003,9 @@ span.smaller-text {
         background-color: rgba(0, 0, 0, 0.5);
       }
 @media screen and (max-width: 900px){
+  .padding-top{
+    padding-top: 20px;
+}
   footer{
     padding-top: 30%;
   }
