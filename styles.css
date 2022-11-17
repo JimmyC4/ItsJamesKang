@@ -448,7 +448,6 @@ span.h1{
   height: 2rem;
   padding: 0;
   margin: 0;
-
 }
 #heart{
   min-width: 100px;
@@ -645,20 +644,25 @@ ul li span.active{
 .idle-scroll{
     opacity: 0;
 }
+.big-text{
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  overflow-x: hidden;
+}
 .big-text h1{
     position: relative;
     z-index: -1;
     display:flex;
     align-items: center;
     justify-content: center;
-    overflow: hidden;
+    overflow: visible;
     white-space: nowrap;
     font-family: 'Roc Grotesk';
     font-style: normal;
     font-weight: 600;
     /* font-size: 15.5em; */
-    font-size: clamp(6.5em, 21vw, 18.5em);
-    line-height: 461px;
+    font-size: clamp(2em, 21vw, 100.5em);
     color: #181818;
 }
 .youtube-video iframe
@@ -805,7 +809,7 @@ textarea{
     cursor: pointer;
     border: none;
     background: rgba(0, 0, 0, 0);
-    font-size: clamp(3.435rem, 6.4vw, 25rem);
+    font-size: clamp(4.8rem, 6.4vw, 25rem);
     /* font-size: clamp(5.7585rem, 6.4vw, 25rem); */
     resize: none;    
 }
@@ -1969,6 +1973,17 @@ span.smaller-text {
         background-color: rgba(0, 0, 0, 0.5);
       }
 @media screen and (max-width: 900px){
+  .sub-text-2 img{
+  position: relative;
+  width: 1.2rem;
+  height: 1rem;
+  padding: 0;
+  margin: 0;
+}
+.width100{
+  margin: auto;
+  width: 100%;
+}
   .container1{
     width: 100%;
   }
