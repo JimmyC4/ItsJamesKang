@@ -1974,6 +1974,9 @@ span.smaller-text {
         background-color: rgba(0, 0, 0, 0.5);
       }
 @media screen and (max-width: 900px){
+  .youtube-video iframe {
+    height: 50vh;
+}
   .sub-text-2 img{
   position: relative;
   width: 1.2rem;
