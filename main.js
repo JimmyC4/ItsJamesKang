@@ -106,7 +106,7 @@ function smoothScroll(){
     current = lerp(current, target, ease)
     current = parseFloat(current.toFixed(2));
     target = window.scrollY
-    skewDiff = (target - current) * .02
+    skewDiff = (target - current) * .01
 
     setTransform(container, `translateY(${-current}px) skewY(${skewDiff}deg)`);
     // updateImages()
