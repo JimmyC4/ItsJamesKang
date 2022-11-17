@@ -432,7 +432,6 @@ span.h1{
 .hero-image{
   flex-wrap: nowrap;
   width: 25%;
-    border: solid red 3px;
 }
 /* .noise::before{
     position: fixed;
@@ -474,7 +473,6 @@ span.h1{
     30%, 80% { background: #fff; }
 }
 .hero-menu{
-    border: solid red 3px;
     user-select: none;
     display: flex;
     justify-content: center;
@@ -484,7 +482,7 @@ span.h1{
     /* font-family: 'Saira', sans-serif; */
     letter-spacing: .2rem;
     font-weight: 400;
-    font-size: clamp(1rem, 4vw, 2.5rem);
+    font-size: clamp(1.2rem, 2vw, 8.5rem);
     line-height: 95%;
     color: rgb(30, 30, 30);
     margin-bottom: 3%;
@@ -801,10 +799,8 @@ textarea{
     cursor: pointer;
     border: none;
     background: rgba(0, 0, 0, 0);
-    font-size: clamp(5.7585rem, 6.4vw, 25rem); 
-    /* font-size: clamp(5.7585rem, 4vw, 6rem);  */
+    font-size: clamp(5.7585rem, 6.4vw, 25rem);
     resize: none;    
-    /* border: solid red 3px; */
 }
 textarea:hover{
     text-decoration: underline;
@@ -871,6 +867,7 @@ footer a:hover{
     height: 20px;
     background-repeat: no-repeat;
     background-size: 20px;
+
 }
 .heart-icon-cont{
     position: relative;
@@ -894,7 +891,6 @@ footer a:hover{
   margin:auto;
 }
 section.project1-s1{
-    /* border: solid red 3px; */
     height: auto;
 }
 section.project2-s1{
@@ -902,14 +898,12 @@ section.project2-s1{
 }
 .img_cont{
     width: 100%;
-    /* border: solid red 3px; */
     position: absolute;
     top: 500px;
     left: 0;
 }
 .img_cont_SV{
     width: 100%;
-    /* border: solid red 3px; */
     display:absolute;
     top: 0px;
     left: 0;
@@ -1039,7 +1033,6 @@ section.project2-s1{
     height: 90vh;
   }
   .holder{
-    border: solid red 3px;
     margin: auto;
     width: 84%;
     display: flex;
@@ -1868,6 +1861,9 @@ span.smaller-text {
     .sub-text-1, .sub-text-2{
         max-width: 100%;
     }
+    .hero-text{
+      font-size: clamp(3rem, 11vw, 35rem);
+    }
 }
 
 @media screen and (max-width: 1010px){
@@ -1911,7 +1907,8 @@ span.smaller-text {
         line-height: 95%;
         color: var(--off-grey);
         margin-bottom: 5%;
-        width: 60%;
+        width: 100%;
+        font-size: .8em;
     }
     .hero-menu h3{
         text-transform: uppercase;
@@ -1982,10 +1979,17 @@ span.smaller-text {
         background-color: rgba(0, 0, 0, 0.5);
       }
 @media screen and (max-width: 900px){
+  .heart-icon{
+    background: url(images/heart-icon.png);
+    width: 25px;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-size: 20px;
+
+}
   .hero-image{
   flex-wrap: nowrap;
   width: 80%;
-    border: solid red 3px;
 }
   .holder{
     padding-top: 15%;
