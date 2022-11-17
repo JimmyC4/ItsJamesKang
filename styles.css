@@ -1907,6 +1907,7 @@ span.smaller-text {
         font-weight: 600;
     }
     nav #anim{
+        display: none;
         position: fixed;
         filter: brightness(0) invert(1);
         width: 15rem;
