@@ -262,7 +262,6 @@ nav ul li a:hover {
     font-weight: 400;
     font-size: 1.1em;
 }
-
 .s2 ul.h2 span{
     color: rgba(5, 5, 5, 0.5);
     font-family: 'Inter';
@@ -270,13 +269,13 @@ nav ul li a:hover {
     font-size: 2rem;
     font-style: normal;
     font-weight: 100;
-    font-size: clamp(2em, 3vw, 4.5em);
+    font-size: clamp(2em, 3vw, 8.5em);
 }
 
 .s2 ul.h1 span{
     position: relative;
     font-weight: 800;
-    font-size: clamp(3em, 4vw, 6em);
+    font-size: clamp(3em, 4vw, 20em);
     font-family: 'Roc Grotesk';
     font-style: normal;
     font-weight: 700;
@@ -390,15 +389,13 @@ span.h1{
     font-size: 2.3rem;
 }
 .text-box p{
-    min-width:100px;
-    max-width:520px;
+    font-size: clamp(1.2rem, 1.5vw, 4.5rem);
     text-align:left;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 300;
-    font-size: 20px;
     letter-spacing: -.03em;
-    line-height: 30px;
+    line-height: 110%;
     color: #050505;
     opacity: .9;
     position: relative;
@@ -444,8 +441,8 @@ span.h1{
 } */
 .sub-text-2 img{
   position: relative;
-  width: 2.2rem;
-  height: 2rem;
+  width: 1.2rem;
+  height: 1rem;
   padding: 0;
   margin: 0;
 }
@@ -588,7 +585,7 @@ section.s2 img{
     position: relative;
     width: 24vw;
     height: auto;
-    top: -7px;
+    top: 7px;
 }
 
 .container1{
@@ -596,8 +593,9 @@ section.s2 img{
     width: 30vw;
     margin: auto;
     display: flex;
-    align-items: center;
+    align-items: end;
     justify-content: center;
+    flex-direction: row;
     gap: 2%;
 }
 /* Animated Text */
@@ -801,7 +799,7 @@ textarea{
     cursor: pointer;
     border: none;
     background: rgba(0, 0, 0, 0);
-    font-size: clamp(4.4rem, 6.4vw, 25rem);
+    font-size: clamp(5rem, 6.4vw, 25rem);
     /* font-size: clamp(5.7585rem, 6.4vw, 25rem); */
     resize: none;    
 }
@@ -824,7 +822,7 @@ footer a:hover{
 .footer-icon{
     opacity: .7;
     mix-blend-mode: difference;
-    width:20px;
+    width:1.5%;
     display: inline-flex;
     margin-left: 1%;
 }
@@ -851,8 +849,9 @@ footer a:hover{
 }
 .sub-text-2{
     display: flex;
-    align-items: right;
+    align-items: center;
     justify-content: center;
+    text-align: right;
     gap: 10px;
     flex-direction: row;
     font-family: 'Inter';
@@ -952,17 +951,18 @@ section.project2-s1{
 /* PROJECT 2 ---------- */
 
 #toast{
+    font-family: 'Inter';
     position:fixed;
     top:0;
     left:50%;
     transform:translate(-50%);
-    background-color:rgb(255, 255, 255);
-    color:rgb(19, 19, 19);
-    padding:16px;
-    border-radius:4px;
+    background-color:rgb(247, 247, 247);
+    color:rgb(5, 5, 5);
+    padding:12px;
+    border-radius:1px;
     text-align:center;
     z-index:1;
-    box-shadow:0 0 20px rgba(0,0,0,0.3);
+    box-shadow:0 0 20px rgba(0,0,0,0.1);
     visibility:hidden;
     opacity:0;
   }
@@ -1018,7 +1018,7 @@ section.project2-s1{
     background-size: cover;
     top:-20px;
     left: 0;
-    width: 100vw;
+    width: 100%;
     margin: auto;
     height: 90vh;
   }
@@ -1066,6 +1066,8 @@ section.project2-s1{
     line-height: 76%;
   }
   .project-info{
+    flex-wrap: wrap;
+    width: 100%;
     padding-top: 1%;
     display: flex;
     align-items: center;
@@ -1189,7 +1191,7 @@ section.project2-s1{
     font-family: 'Inter';
     font-style: normal;
     font-weight: 300;
-    font-size: clamp(1em, 1.1vw, 5em);
+    font-size: clamp(1em, 1.5vw, 1.5em);
     color: rgb(5, 5, 5);
     line-height: 1.2em;
   }
@@ -1847,18 +1849,83 @@ span.smaller-text {
   }
 
 @media screen and (max-width: 1200px){
+  a.email {
+    height: 20vh;
+  }
     .hero-text{
       font-size: clamp(3rem, 11vw, 35rem);
     }
 }
 
 @media screen and (max-width: 1010px){
-    .footer-icon.d{
-        margin-left: 0%;
-    }
-}
-
-@media screen and (max-width: 1010px){
+  .problemsolving{
+    padding-top: 60%;
+  }
+  .solution{
+    padding-top: 20%;
+  }
+  .summary-text{
+    padding-bottom: 30%;
+  }
+  a.email {
+    height: 30vh;
+  }
+    .portside_text{
+      width: 80%;
+  }
+  .VS_image_container{
+      display: none;
+  }
+  .project2-s1{
+      margin-left: -105%;
+      margin-right: 0;
+      width: 200%;
+  }
+  .VS_images{
+      display: all;
+      display:flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+  }
+  .VS_image_2{
+      width: 500px;
+  }
+  .project2-s2{
+      padding-bottom: 100px;
+  }
+  .my_tools{
+      margin-bottom: -30%;
+  }
+  .box{
+      margin-bottom: 20%;
+  }
+  section.project2-s1 {
+      height: 150%;
+  }
+  .portside-colour-1, .portside-colour-2, .portside-colour-3, .portside-colour-4 {
+    width: 20rem;
+    height: 10rem;
+  }
+  .summary-content{
+    flex-direction: column;
+  }
+  .summary-content img{
+    padding: 20% 0 10% 0;
+    width: 80%;
+  }
+  .summary-text{
+    margin-top:10%;
+  }
+  .footer-icon{
+    width:3.5%;
+  }
+  .footer-icon.d{
+      margin-left: 0%;
+  }
+  .colour-palette {
+    justify-content: space-between;
+  }
     section.s2 img{
       width: 80vw;
     }
@@ -2018,7 +2085,7 @@ span.smaller-text {
     width: 80%;
   }
   .text-box .h1{
-    font-size: .9em;
+    font-size: .8em;
   }
     
   .hero-image{
@@ -2037,48 +2104,11 @@ span.smaller-text {
     padding-top: 30%;
   }
     a.email{
-        height:90vh;
         max-height: 60vh;
         overflow:visible;
     }
     nav ul li a{
       font-size: clamp(.9em, 1.5vw, 6.5em);
   }
-}
-
-@media screen and (max-width: 1000px){
-    .portside_text{
-        width: 80%;
-    }
-    .VS_image_container{
-        display: none;
-    }
-    .project2-s1{
-        margin-left: -105%;
-        margin-right: 0;
-        width: 200%;
-    }
-    .VS_images{
-        display: all;
-        display:flex;
-        align-items: center;
-        justify-content: center;
-        flex-wrap: wrap;
-    }
-    .VS_image_2{
-        width: 500px;
-    }
-    .project2-s2{
-        padding-bottom: 100px;
-    }
-    .my_tools{
-        margin-bottom: -30%;
-    }
-    .box{
-        margin-bottom: 20%;
-    }
-    section.project2-s1 {
-        height: 150%;
-    }
 }
 }
