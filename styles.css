@@ -90,7 +90,7 @@ body{
     background:rgb(223, 223, 223);
     /* background: rgb(12, 12, 12); */
     color: rgb(22, 22, 22);
-    font-family: "Roc Grotesk", sans-serif;
+    font-family: Roc Grotesk, Violet-Sans, Inter, Tahoma;
     font-family: Violet-Sans; 
     text-decoration: none;
     /* -webkit-font-smoothing: antialiased; */
@@ -276,7 +276,7 @@ nav ul li a:hover {
     position: relative;
     font-weight: 800;
     font-size: clamp(3em, 4vw, 20em);
-    font-family: 'Roc Grotesk';
+    font-family: Roc Grotesk, Violet-Sans, Inter, Tahoma;
     font-style: normal;
     font-weight: 700;
 
@@ -489,7 +489,7 @@ span.h1{
     margin-bottom: 3%;
 }
 .hero-text{
-    font-family: "Roc Grotesk", sans-serif;
+    font-family: Roc Grotesk, Violet-Sans, Inter, Tahoma;
     font-style: normal;
     font-weight: 600;
     font-size: clamp(4rem, 11vw, 35rem);
@@ -649,7 +649,7 @@ ul li span.active{
     justify-content: center;
     overflow: visible;
     white-space: nowrap;
-    font-family: 'Roc Grotesk';
+    font-family: Roc Grotesk, Violet-Sans, Inter, Tahoma;
     font-style: normal;
     font-weight: 600;
     /* font-size: 15.5em; */
@@ -776,7 +776,7 @@ footer h3{
 }
 
 footer a.email{
-    font-family: "Roc Grotesk", sans-serif;
+    font-family: Roc Grotesk, Violet-Sans, Inter, Tahoma;
     cursor: pointer;
     text-decoration: none;
     font-weight: 700;
@@ -904,7 +904,7 @@ section.project2-s1{
     background: grey;
 }
 .project_img h1{
-    font-family: 'Roc Grotesk';
+    font-family: Roc Grotesk, Violet-Sans, Inter, Tahoma;
     font-style: normal;
     font-weight: 700;
     font-size: clamp(38px, 100%, 4rem);
@@ -926,7 +926,7 @@ section.project2-s1{
     right:-40.5%;
     width: auto;
     rotate: -90deg;
-    font-family: 'Roc Grotesk';
+    font-family: Roc Grotesk, Violet-Sans, Inter, Tahoma;
     font-style: normal;
     font-weight: 700;
     font-size: 12rem;
@@ -940,7 +940,7 @@ section.project2-s1{
     right:-41.5%;
     width: auto;
     rotate: -90deg;
-    font-family: 'Roc Grotesk';
+    font-family: Roc Grotesk, Violet-Sans, Inter, Tahoma;
     font-style: normal;
     font-weight: 700;
     font-size: 12rem;
@@ -1059,7 +1059,7 @@ section.project2-s1{
     height: 45vh;
   }
   .proj-summary h1{
-    font-family: 'Roc Grotesk';
+    font-family: Roc Grotesk, Violet-Sans, Inter, Tahoma;
     font-style: normal;
     font-weight: 700;
     font-size: clamp(3rem, 3.5vw, 12rem);
@@ -1727,7 +1727,7 @@ section.project2-s1{
     background-image: linear-gradient(#e3ced1, #e8c3c3);
 }
 .name{
-    font-family: Roc Grotesk Wide;
+    font-family: Roc Grotesk, Violet-Sans, Inter, Tahoma;
     font-size: 60px;
     font-weight:600;
 }
@@ -1737,7 +1737,7 @@ section.project2-s1{
     width: 100%;
 } */
 .bold{
-    font-family: "Roc Grotesk", sans-serif;
+    font-family: Roc Grotesk, Violet-Sans, Inter, Tahoma;
     font-size: 1.1em;
     letter-spacing: .02em;
     font-weight: 400;
@@ -1819,7 +1819,7 @@ span.smaller-text {
     padding: 15px;
     color: rgb(176, 176, 176);
     cursor: pointer;
-    font-family: "Roc Grotesk", sans-serif;
+    font-family: Roc Grotesk, Violet-Sans, Inter, Tahoma;
     font-weight: 500;
     font-size: 23px;
     background-image: linear-gradient(#292929, #2b2b2b);
