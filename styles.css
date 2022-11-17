@@ -662,7 +662,7 @@ ul li span.active{
     font-style: normal;
     font-weight: 600;
     /* font-size: 15.5em; */
-    font-size: clamp(2em, 21vw, 100.5em);
+    font-size: clamp(1.8em, 21vw, 100.5em);
     color: #181818;
 }
 .youtube-video iframe
