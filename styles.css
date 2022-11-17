@@ -600,13 +600,6 @@ section.s2 img{
     justify-content: center;
     gap: 2%;
 }
-hr.line {
-    border: 0;
-    height: 1px;
-    background-color: black;
-    position: relative;
-    top: -2px;
-  }
 /* Animated Text */
 
 :root{
@@ -753,7 +746,6 @@ hr {
         height: 1px;
         background-color: black;
         position: relative;
-        top: -2px;
 }
 
 
@@ -1084,15 +1076,15 @@ section.project2-s1{
     font-style: normal;
     font-weight: 300;
     font-size: clamp(1.3em, 1.6vw, 7.5em);
-    line-height: 76%;
+    line-height: 100%;
     color: #050505;
   }
   .project-info p{
     font-family: 'Inter';
     font-style: normal;
     font-weight: 300;
+    line-height: 100%;
     font-size: clamp(1.3em, 1.6vw, 7.5em);
-    line-height: 76%;
     text-align: right;
     color: #797979;
   }
@@ -1518,13 +1510,13 @@ section.project2-s1{
   /* PROJECT | fernfinder. */
   .transition{
     z-index: 10;
-    position: absolute;
-    /* mix-blend-mode: overlay; */
-    background: var(--off-black);
+    position: fixed;
+    mix-blend-mode:difference;
+    /* background: var(--off-black); */
     background:rgb(223, 223, 223);
     /* background: white; */
     width: 200vw;
-    height: 800vh;
+    height: 500vh;
     animation: transitionOverlay 1.5s forwards; 
   }
 @keyframes transitionOverlay {
@@ -1904,11 +1896,20 @@ span.smaller-text {
     }
     nav #anim{
         display: none;
-        position: fixed;
-        filter: brightness(0) invert(1);
-        width: 15rem;
-        margin-top: -80px;
-        margin-left: -50px;
+    }
+    .logo{
+        display: none;
+    }
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .problem{
+      flex-direction: column;
+    }
+    .problem-main-text{
+      padding-top: 35%;
     }
     .navcont{
       display: flex;
