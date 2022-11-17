@@ -442,6 +442,14 @@ span.h1{
     pointer-events: none;
     background: url(images/noise.jpeg);
 } */
+.sub-text-2 img{
+  position: relative;
+  width: 2.2rem;
+  height: 2rem;
+  padding: 0;
+  margin: 0;
+
+}
 #heart{
   min-width: 100px;
     transition: .1s ease-in-out;
@@ -847,7 +855,7 @@ footer a:hover{
 }
 .sub-text-2{
     display: flex;
-    align-items: center;
+    align-items: right;
     justify-content: center;
     gap: 10px;
     flex-direction: row;
@@ -856,21 +864,8 @@ footer a:hover{
     font-weight: 400;
     font-size: clamp(1em, 1.5vw, 5em);
     line-height: 36px;
-    text-align: right;
 
     color: rgba(0, 0, 0, 0.5);
-}
-.heart-icon{
-    background: url(images/heart-icon.png);
-    width: 20px;
-    height: 20px;
-    background-repeat: no-repeat;
-    background-size: 20px;
-
-}
-.heart-icon-cont{
-    position: relative;
-    width: 10px;
 }
 
 .sub-text-container{
@@ -878,7 +873,7 @@ footer a:hover{
     margin:auto;
     margin-bottom: 5%;
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     justify-content: space-between;
 }
 .s1{
@@ -1856,9 +1851,6 @@ span.smaller-text {
   }
 
 @media screen and (max-width: 1200px){
-    .sub-text-1, .sub-text-2{
-        max-width: 100%;
-    }
     .hero-text{
       font-size: clamp(3rem, 11vw, 35rem);
     }
@@ -1987,14 +1979,6 @@ span.smaller-text {
     font-size: .9em;
   }
     
-  .heart-icon{
-    background: url(images/heart-icon.png);
-    width: 25px;
-    height: 20px;
-    background-repeat: no-repeat;
-    background-size: 20px;
-
-}
   .hero-image{
   flex-wrap: nowrap;
   width: 80%;
