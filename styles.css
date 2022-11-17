@@ -716,7 +716,7 @@ ul li span.active{
 
 .project-text{
     display: flex;
-    align-items: center;
+    align-items: end;
     justify-content: space-between;
     margin-top: 4px;
     margin-bottom: 20px;
