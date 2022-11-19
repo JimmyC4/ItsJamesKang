@@ -688,7 +688,7 @@ ul li span.active{
     padding-top: 185px;
 }
 .two-projects{
-  padding-inline: 10%;
+  padding-inline: 8%;
     gap: 20px;
     width: 100%;
     display: flex;
@@ -1992,7 +1992,7 @@ span.smaller-text {
       flex-direction: column;
     }
     .problem-main-text{
-      padding-top: 35%;
+      padding-top: 50%;
     }
     .navcont{
       display: flex;
