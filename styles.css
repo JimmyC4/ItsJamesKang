@@ -298,7 +298,7 @@ nav #anim, nav #anim3{
     mix-blend-mode: difference;
     color: white;
     filter: brightness(0) invert(1);
-    width: 15rem;
+    width: clamp(10rem, 12vw, 45rem);
 }
 #anim2:hover{
     transform: scale(1.0);
@@ -338,6 +338,7 @@ nav #anim, nav #anim3{
     width: 5rem;
     margin: auto;
     margin-top: -4%;
+    opacity: .6;
 }
 
 .logo:hover{
@@ -720,24 +721,6 @@ ul li span.active{
     justify-content: space-between;
     margin-top: 4px;
     margin-bottom: 20px;
-}
-.project-text p{
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 15px;
-    line-height: 18px;
-
-    color: rgba(5, 5, 5, 0.5);
-}
-.project-name p{
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 20px;
-    line-height: 24px;
-
-    color: #000000;
 }
 hr {
         border: 0;
@@ -1180,7 +1163,7 @@ section.project2-s1{
     font-style: normal;
     font-weight: 300;
     font-size: clamp(.9em, .9vw, 7.5em);
-    line-height: 18px;
+    line-height: 100%;
     color: rgba(5, 5, 5, 0.5);
   }
   .subheading{
@@ -1188,14 +1171,16 @@ section.project2-s1{
     font-style: normal;
     font-weight: 300;
     font-size: clamp(1em, 1.5vw, 5em);
-    line-height: 28px;
+    line-height: 100%;
     color: rgb(5, 5, 5);
   }
   .bodycopy{
     font-family: 'Inter';
     font-style: normal;
     font-weight: 300;
-    font-size: clamp(1em, 1.5vw, 1.5em);
+    font-size: clamp(1em, 1.5vw, 4.5em);
+    /* font-size: clamp(1em, 1.5vw, 1.5em); */
+    /* font-size: clamp(1.2rem, 1.5vw, 4.5rem); */
     color: rgb(5, 5, 5);
     line-height: 1.2em;
   }
@@ -1353,7 +1338,6 @@ section.project2-s1{
     font-family: 'Inter';
     text-decoration: underline;
     font-weight: 200;
-    font-size: 33px;
     line-height: 76%;
     text-decoration-thickness: .01em;
   }
@@ -1390,7 +1374,7 @@ section.project2-s1{
     font-family: 'Inter';
     text-decoration: underline;
     font-weight: 200;
-    font-size: 33px;
+    font-size: clamp(1em, 2.5vw, 5em);
     line-height: 76%;
     text-decoration-thickness: .01em;
   }
@@ -1852,6 +1836,7 @@ span.smaller-text {
     background-image: linear-gradient(45deg,#e62041,#eb2e4d 100%);
   }
   .thanks_content{
+    line-height: 120%;
     padding: 30% 0 30% 0;
     width: 100%;
     display: flex;
@@ -1879,7 +1864,6 @@ span.smaller-text {
   .padbot20{
     padding-bottom: 20%;
   }
-
 @media screen and (max-width: 1200px){
   a.email {
     height: 20vh;
