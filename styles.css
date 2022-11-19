@@ -327,7 +327,7 @@ nav #anim, nav #anim3{
     /* filter: invert(100%); */
     width: 6%;
     min-width: 90px;
-    margin-top: 1.5%;
+    margin-top: 3.3%;
     margin-left: 7.5%;
 }
 
@@ -805,6 +805,7 @@ textarea{
 }
 textarea:hover{
     text-decoration: underline;
+    color: #e62041;
 }
 
 footer a:hover{
@@ -1081,14 +1082,18 @@ section.project2-s1{
     line-height: 100%;
     color: #050505;
   }
-  .project-info p{
+  .project-info a{
     font-family: 'Inter';
     font-style: normal;
     font-weight: 300;
     line-height: 100%;
-    font-size: clamp(1.3em, 1.6vw, 7.5em);
+    font-size: clamp(1.3em, 1.5vw, 7.5em);
+    line-height: 110%;
     text-align: right;
     color: #797979;
+  }
+  .project-info a:hover{
+    color: #e62041;
   }
   .screens{
     width: 100%;
@@ -1150,8 +1155,9 @@ section.project2-s1{
     margin: auto;
     width: 100%;
     display: flex;
-    align-items: baseline;
-    justify-content: space-between;
+    align-items:baseline;
+    justify-content: center;
+    gap: 1.5%;
   }
   .problem-main-text{
     width: 49.1%;
@@ -1165,8 +1171,6 @@ section.project2-s1{
   }
   .problemsolving{
     padding-top: 20%;
-    padding-bottom: 10%;
-
   }
   .right{
     text-align: right;
@@ -1846,6 +1850,34 @@ span.smaller-text {
     opacity: .9;
     background-image: linear-gradient(#e3ced1, #e8c3c3);
     background-image: linear-gradient(45deg,#e62041,#eb2e4d 100%);
+  }
+  .thanks_content{
+    padding: 30% 0 30% 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .thanks_content img{
+    width: 1.6rem;
+  }
+  .thanks_content img:hover{
+    opacity: .5;
+  }
+  .doc{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+  }
+  .myotherwork{
+    margin: auto;
+    width: 84%; 
+    padding-bottom: 5%;
+  }
+  .padbot20{
+    padding-bottom: 20%;
   }
 
 @media screen and (max-width: 1200px){
