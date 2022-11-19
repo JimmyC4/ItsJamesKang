@@ -2109,7 +2109,7 @@ span.smaller-text {
 .image_info img, .image_info_p2 img {
   width: 42%;
 }
-.hero_project{
+.hero_project, .hero_project2{
   height: 40vh;
 }
 .proj-images{
