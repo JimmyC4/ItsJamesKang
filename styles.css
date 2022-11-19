@@ -1006,6 +1006,17 @@ section.project2-s1{
     margin: auto;
     height: 90vh;
   }
+  .hero_project2{
+    position: relative;
+    background-color: rgb(148, 97, 97);
+    background: url(images/ff5.png);
+    background-size: cover;
+    top:-20px;
+    left: 0;
+    width: 100%;
+    margin: auto;
+    height: 90vh;
+  }
   .holder{
     margin: auto;
     width: 84%;
@@ -1037,6 +1048,22 @@ section.project2-s1{
   .proj-image-2{
     background: grey;
     background: url(images/aboutus.png);
+    position: relative;
+    background-size: cover;
+    width: 41.2vw;
+    height: 45vh;
+  }
+  .proj-image-3{
+    background: grey;
+    background: url(images/cart.png);
+    position: relative;
+    width: 41.2vw;
+    height: 45vh;
+    background-size: cover;
+  }
+  .proj-image-4{
+    background: grey;
+    background: url(images/products.png);
     position: relative;
     background-size: cover;
     width: 41.2vw;
@@ -1138,18 +1165,20 @@ section.project2-s1{
     margin: auto;
     width: 100%;
     display: flex;
-    align-items:baseline;
+    align-items:flex-end;
     justify-content: center;
     gap: 1.5%;
   }
   .problem-main-text{
     width: 49.1%;
     position: relative;
-    top: -135px;
+    /* top: -135px; */
   }
   .problem-content img{
+    display: block;
     width: 100%;
-    height: 30vh;
+    height: auto;
+    margin-bottom: 2%;
     background: grey;
   }
   .problemsolving{
@@ -1191,8 +1220,10 @@ section.project2-s1{
     text-align: left;
   }
   .screens2 img{
+    margin-bottom: 1.5%;
+    display: block;
     width: 100%;
-    height: 50vh;
+    height: auto;
     background: grey;
   }
   h1.project-goals{
@@ -1211,7 +1242,7 @@ section.project2-s1{
     margin: auto;
   }
   .summary-text{
-    margin-top: 35%;
+    margin-top: 31%;
     width: 41.2vw;
     font-size: 1.125rem;
   }
@@ -1266,6 +1297,7 @@ section.project2-s1{
     height: auto;
     width: 49.5%;
     margin-left: 50.5%;
+    padding-bottom: 30%;
   }
 .colour-palette{
     padding-top: 60%;
@@ -1294,8 +1326,23 @@ section.project2-s1{
   .portblack{
     background: #141414;
   }
+
+  .lightorange{
+    background: #E6B968;
+  }
+  .pink{
+    background: #F9B5A0;
+  }
+  .ffwhite{
+    background: #FFF9FC;
+  }
+  .ffbeige{
+    background: #FFFBF1;
+  }
+  .colour-desc{
+    padding-top: 2%;
+  }
   .colour-pallete-info h1{
-    padding-top: 8%;
     padding-bottom: 2%;
   }
   .colour-pallete-info p{
@@ -1307,7 +1354,6 @@ section.project2-s1{
     text-align: right;
   }
   .persona-info{
-    padding-top: 30%;
     padding-bottom: 15%;
     text-align: right;
     width: 49.3%;
@@ -1425,11 +1471,7 @@ section.project2-s1{
     font-size: 20px;
     margin-top: 3%;
 }
-#about{
-    position: absolute;
-    top: 245%;
-    width: 100%;
-}
+
 
 /* ------------------------ SUSTAINABLE VICTORIA ------------------------ */
 .VS_image_container{
@@ -1992,7 +2034,7 @@ span.smaller-text {
       flex-direction: column;
     }
     .problem-main-text{
-      padding-top: 50%;
+      padding-top: 5%;
     }
     .navcont{
       display: flex;
