@@ -195,7 +195,7 @@ li a:hover{
     transition: .1s ease-in-out;
 }
 nav ul li a:hover {
-    letter-spacing: .1rem;
+    letter-spacing: .09rem;
 }
 
 .un {
@@ -1011,8 +1011,7 @@ section.project2-s1{
     background-color: rgb(148, 97, 97);
     background: url(images/ff5.png);
     background-size: cover;
-    top:-20px;
-    left: 0;
+    background-position: center;
     width: 100%;
     margin: auto;
     height: 90vh;
@@ -1040,6 +1039,7 @@ section.project2-s1{
   .proj-image-1{
     background: grey;
     background: url(images/walls.png);
+    background-position: center;
     position: relative;
     width: 41.2vw;
     height: 45vh;
@@ -1048,6 +1048,7 @@ section.project2-s1{
   .proj-image-2{
     background: grey;
     background: url(images/aboutus.png);
+    background-position: center;
     position: relative;
     background-size: cover;
     width: 41.2vw;
@@ -1056,6 +1057,7 @@ section.project2-s1{
   .proj-image-3{
     background: grey;
     background: url(images/cart.png);
+    background-position: center;
     position: relative;
     width: 41.2vw;
     height: 45vh;
@@ -1064,6 +1066,7 @@ section.project2-s1{
   .proj-image-4{
     background: grey;
     background: url(images/products.png);
+    background-position: center;
     position: relative;
     background-size: cover;
     width: 41.2vw;
@@ -1207,7 +1210,7 @@ section.project2-s1{
     font-family: 'Inter';
     font-style: normal;
     font-weight: 300;
-    font-size: clamp(1em, 1.5vw, 4.5em);
+    font-size: clamp(1em, 1.3vw, 4.5em);
     /* font-size: clamp(1em, 1.5vw, 1.5em); */
     /* font-size: clamp(1.2rem, 1.5vw, 4.5rem); */
     color: rgb(5, 5, 5);
