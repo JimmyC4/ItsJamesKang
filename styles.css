@@ -824,7 +824,7 @@ footer a:hover{
     font-style: normal;
     font-weight: 400;
     font-size: clamp(1em, 1.5vw, 5em);
-    line-height: 36px;
+    line-height: 150%;
 
     color: rgba(0, 0, 0, 0.5);
 }
@@ -839,7 +839,7 @@ footer a:hover{
     font-style: normal;
     font-weight: 400;
     font-size: clamp(1em, 1.5vw, 5em);
-    line-height: 36px;
+    line-height: 150%;
 
     color: rgba(0, 0, 0, 0.5);
 }
@@ -2100,6 +2100,16 @@ span.smaller-text {
       }
 }
 @media screen and (max-width: 780px){
+  .sub-text-container{
+    width: 100%;
+    margin:auto;
+    margin-bottom: 5%;
+    gap: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
     a.email{
       height: 50vh;
     }
