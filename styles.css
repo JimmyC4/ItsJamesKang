@@ -717,6 +717,7 @@ ul li span.active{
     filter: grayscale(100%);
 }
 .two-projects img:hover{
+    transform: scale(1.02);
     filter: grayscale(0%);
 }
 
