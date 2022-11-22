@@ -1896,7 +1896,7 @@ span.smaller-text {
     flex-direction: column;
   }
   .thanks_content img{
-    margin: 1.5em;
+    margin: 1em;
     width: 1.9vw;
   }
   .thanks_content img:hover{
