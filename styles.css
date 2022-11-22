@@ -271,8 +271,8 @@ nav ul li a:hover {
     font-weight: 100;
     font-size: clamp(2em, 3vw, 8.5em);
 }
-
 .s2 ul.h1 span{
+  
     position: relative;
     font-weight: 800;
     font-size: clamp(3em, 4vw, 20em);
@@ -378,10 +378,6 @@ section.s4{
 span.h1{
     font-weight: 500;
     font-size: 3rem;
-}
-.text-box{
-  width: 100%;
-  overflow: visible;
 }
 .text-box h2{
     color:rgb(255, 255, 255);
@@ -1911,7 +1907,7 @@ span.smaller-text {
   }
 @media screen and (max-width: 1200px){
   a.email {
-    height: 20vh;
+    height: 30vh;
   }
     .hero-text{
       font-size: clamp(3rem, 11vw, 35rem);
@@ -2101,6 +2097,11 @@ span.smaller-text {
         color: #fff;
         background-color: rgba(0, 0, 0, 0.5);
       }
+}
+@media screen and (max-width: 780px){
+    a.email{
+      height: 50vh;
+    }
 @media screen and (max-width: 900px){
   .bottom_info_p2{
     margin-left: -3%;
