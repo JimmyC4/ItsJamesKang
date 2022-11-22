@@ -278,7 +278,6 @@ nav ul li a:hover {
     font-family: Roc Grotesk, Violet-Sans, Inter, Tahoma;
     font-style: normal;
     font-weight: 700;
-
     color: #050505;
 }
 .anim{
@@ -1897,6 +1896,7 @@ span.smaller-text {
     flex-direction: column;
   }
   .thanks_content img{
+    margin: 1.5em;
     width: 1.9vw;
   }
   .thanks_content img:hover{
