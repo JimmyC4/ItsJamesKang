@@ -131,7 +131,6 @@ nav{
     line-height: .2rem;
     z-index: 999;
     position: fixed;
-    height: 10vh;
     width: 100vw;
     transition: all .5s ease-in-out;
 }
@@ -170,7 +169,7 @@ nav{
 }
 nav ul{
   margin-right: 7.5%;
-  margin-top: 3%;
+  margin-top: 2%;
     float: right;
 }
 
@@ -282,7 +281,9 @@ nav ul li a:hover {
 
     color: #050505;
 }
-
+.anim{
+  margin-top: -1%;
+}
 nav #anim, nav #anim3{
     margin-left: 1.5%;
     position: fixed;

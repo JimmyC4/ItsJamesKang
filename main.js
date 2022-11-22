@@ -5,7 +5,7 @@ console.log("JavaScript is working!")
 
 // Navigation Hide
 var scroll1 = window.pageYOffset;
-document.querySelector('nav').style.top = "-200px"; //hide nav on start
+document.querySelector('nav').style.top = "-100px"; //hide nav on start
 
 var delayInMilliseconds = 100; //1 second
 
