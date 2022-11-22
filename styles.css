@@ -1887,7 +1887,7 @@ span.smaller-text {
     flex-direction: column;
   }
   .thanks_content img{
-    width: 1.6rem;
+    width: 1.9vw;
   }
   .thanks_content img:hover{
     opacity: .5;
