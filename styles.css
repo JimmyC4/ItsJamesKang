@@ -659,7 +659,7 @@ ul li span.active{
     font-weight: 600;
     /* font-size: 15.5em; */
     font-size: clamp(1.8em, 21vw, 100.5em);
-    color: #181818;
+    color: rgb(15, 15, 15);
 }
 .youtube-video iframe
 {
@@ -1080,7 +1080,7 @@ section.project2-s1{
   .proj-summary h1{
     font-family: roc-grotesk, sans-serif, Violet-Sans, Inter, Tahoma;
     font-style: normal;
-    font-weight: 700;
+    font-weight: 600;
     font-size: clamp(3rem, 3.5vw, 12rem);
     line-height: 76%;
   }
@@ -1765,9 +1765,8 @@ section.project2-s1{
     background-image: linear-gradient(#e3ced1, #e8c3c3);
 }
 .name{
-    font-family: Roc Grotesk, Violet-Sans, Inter, Tahoma;
+    font-family: roc-grotesk, sans-serif Violet-Sans, Inter, Tahoma;
     font-size: 60px;
-    font-weight:600;
 }
 /* .text-holder hr{
     border: 1px solid white;
@@ -1775,7 +1774,7 @@ section.project2-s1{
     width: 100%;
 } */
 .bold{
-    font-family: Roc Grotesk, Violet-Sans, Inter, Tahoma;
+    font-family: roc-grotesk, sans-serif, Violet-Sans, Inter, Tahoma;
     font-size: 1.1em;
     letter-spacing: .02em;
     font-weight: 400;
@@ -1857,7 +1856,7 @@ span.smaller-text {
     padding: 15px;
     color: rgb(176, 176, 176);
     cursor: pointer;
-    font-family: Roc Grotesk, Violet-Sans, Inter, Tahoma;
+    font-family: roc-grotesk, sans-serif, Violet-Sans, Inter, Tahoma;
     font-weight: 500;
     font-size: 23px;
     background-image: linear-gradient(#292929, #2b2b2b);
