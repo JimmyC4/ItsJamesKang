@@ -1373,6 +1373,9 @@ section.project2-s1{
     margin-top: 35%;
     margin-bottom: 35%;
   }
+  .image{
+    filter: grayscale(100%);
+  }
   .image_info{
     text-align: right;
     display: flex;
