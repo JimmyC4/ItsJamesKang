@@ -176,7 +176,7 @@ nav ul{
 nav ul li{
     list-style: none;
     display: inline-block;
-    margin: 0 15px 0 0;
+    margin: 0 1vw 0 0;
     line-height: 120px;
 }
 
@@ -1918,6 +1918,9 @@ span.smaller-text {
     padding-bottom: 20%;
   }
 @media screen and (max-width: 1200px){
+  nav ul li{
+    margin: 0 1em 0 0;
+  }
   a.email {
     height: 30vh;
   }
