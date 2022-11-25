@@ -1270,7 +1270,7 @@ section.project2-s1{
     padding-left: 0px;
   }
   .dot-points-holder{
-    padding-top: 25%;
+    padding-top: 10%;
   }
   .dot-points-holder p{
     font-family: 'Inter';
@@ -1385,7 +1385,7 @@ section.project2-s1{
     flex-direction: row;
   }
   .image_info img{
-    margin-right: 5%;
+    margin-right: 0%;
     width: 25%;
   }
   .description{
@@ -1418,7 +1418,7 @@ section.project2-s1{
     flex-direction: row;
   }
   .image_info_p2 img{
-    margin-left: 5%;
+    margin-left: 0%;
     width: 25%;
   }
   .description{
@@ -1443,14 +1443,14 @@ section.project2-s1{
     padding-top: 2%;
     width: 25%;
     position: relative;
-    margin-left: 50.75%;
+    margin-left: 53.25%;
   }
   .bottom_info_p2{
     text-align: right;
     padding-top: 2%;
     width: 25%;
     position: relative;
-    margin-left: 24.3%;
+    margin-left: 21.7%;
   }
   .bottom_info p, .bottom_info_p2 p{
     padding-bottom: 1%;
